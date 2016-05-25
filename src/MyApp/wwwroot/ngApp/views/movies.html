@@ -1,0 +1,10 @@
+﻿<h1>This is the Movies Page!</h1>
+<h5><a href="/addMovie">Create a new Movie</a></h5>
+<ul>
+    <li ng-repeat="movie in controller.movies">
+        {{movie.title}} - {{movie.director}} - 
+        <a href="/deleteMovie/{{movie.id}}">Delete</a> |
+        <a href="/editMovie/{{movie.id}}">Edit</a>
+    </li>
+</ul>
+
